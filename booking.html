@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+		<title>Vastlandic Aerial</title>
+		<meta name="description" content="Aerial & Real Estate Photography in Saskatoon, Canada">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!--OLD BOOTSTRAP CSS V4.1.3 - Dropdown nav-buttons don't work-->
+		<!--
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		-->
+		
+		<!--NEW BOOTSTRAP CSS V5.1.3 - Navbar Collapse Button not functioning like in V4.1.3-->
+		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		
+		<!--NEWEST BOOTSTRAP V5.3.2 did not work well with my dropdown menu-->
+		<!--
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+		-->
+		
+		<link rel="stylesheet" type="text/css" href="css/all.css">
+		<link rel="stylesheet" type="text/css" href="css/w3.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		
+		<!--OLD BOOTSTRAP JS Version - Dropdown nav-buttons don't work-->
+		<!--
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		-->
+		
+		<!--NEW BOOTSTRAP JS Version 5.1.3 - Navbar Collapse Button not functioning like in V4.1.3-->
+		
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+		
+		<script type="text/javascript" src="js/main.js"></script>
+
+    <link rel="icon" type="image/png" href="images/favicon9.png"/>
+
+</head>
+
+
+<!------------------------------------------------------------------------------------------------------------>
+
+<body>
+
+<!--HEADER "COVER PHOTO"-->
+<img src="images/cover.jpg" class="header-bkgrnd">
+
+
+<!------------------------------------------------------------------------------------------------------------>
+
+
+<!--COPIED CODE FROM SandlotPHP navbar file, and converted to HTML-->
+
+<nav class="navbar sticky-top navbar-expand-md bg-dark navbar-dark">
+<div class="container-fluid">
+    <a class="navbar-brand" style="color: #00ccff;" href="index.html">Vastlandic Aerial</a> 
+	<!--#60b0f4 for the banner logo?-->
+	
+	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="fas fa-wind fa-2x"></span>
+    </button>
+	
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">	
+        <ul class="navbar-nav ms-auto">
+		
+<!--Single Booking Tab
+			<li class="nav-item">
+				<a class="nav-link" href="booking.html">
+						Booking
+				</a>
+			</li>
+-->
+			
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					Booking
+				</a>
+				
+				
+				
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" data-bs-popper="none"> <!--Remove navbarDropdownMenuLink?-->
+						
+						<li>
+							<a class="dropdown-item" role="button" href="booking.html">
+							<h5>
+							<strong>
+								Book a Time & Date
+							</strong>
+							</h5>
+							</a>
+						</li>	
+						<div class="dropdown-divider"></div>
+						
+						<li>
+							<h3 class="dropdown-header h3">
+								Check Before You Book:
+							</h3>
+						</li>
+						
+						<li>
+							<a class="dropdown-item" role="button" href="booking.html#windrain">
+							<h5>
+							<strong>
+								Wind & Rain Forecast
+							</strong>
+							</h5>
+							</a>
+						</li>
+						
+					</ul>
+			</li>
+			
+			<!--Use THIS until Gallery has been built on your site!!!!!!!!!!!-->
+			<!--
+			<li class="nav-item">
+				<a class="nav-link" href="https://platform.brisksky.com/pilot/profile/9cdf3db8-1e0b-43f8-928d-4d3a7da824d0" target="_blank">
+						Portfolio
+				</a>
+			</li>
+			-->
+			
+			
+			
+			<li class="nav-item">
+				<a class="nav-link" href="index.html#carouselDroneShots">
+						Gallery
+				</a>
+			</li>
+			
+			<!--
+			<li class="nav-item">
+				<a class="nav-link" href="gallery.html">
+						Gallery2
+				</a>
+			</li>
+			-->
+			
+			<!--Instagram-->
+			<li class="nav-item">
+				<a class="nav-link" href="http://www.instagram.com/vastlandic.aerial/" target="_blank">
+					<button class="btn btn-sm btn-primary" type="button">
+						<span class="fab fa-brands fa-instagram fa-2x" href="#"></span>
+					</button>
+				</a>
+			</li>
+			
+			<!--LinkedIn-->
+			<li class="nav-item">
+				<a class="nav-link" href="https://linkedin.com/in/nickcharp" target="_blank">
+					<button class="btn btn-sm btn-primary" type="button">
+						<span class="fab fa-brands fa-linkedin fa-2x" href="#"></span> <!--Or use fa-linkedin-in for alternate style-->
+					</button>
+				</a>
+			</li>
+			
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					About
+				</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" data-bs-popper="none">
+						
+						<li>
+							<h3 class="dropdown-header h3">
+								Certified Drone Pilots
+							</h3>
+						</li>
+						
+						<li>
+							<a class="dropdown-item" href="https://nickcharp.github.io/portfolio" target="_blank">
+								Nick Charpentier
+							</a>
+						</li>
+						
+					<!--	
+						<div class="dropdown-divider"></div>
+						<li>
+							<a class="dropdown-item" href="about.html">
+								Qualifications
+							</a>
+						</li>
+						
+						<div class="dropdown-divider"></div>
+						<li>
+							<a class="dropdown-item" href="about.html">
+								Vastlandic Vision Statement
+							</a>
+						</li>
+					-->	
+					</ul>
+			</li>
+			
+			
+			<li class="nav-item">
+				<a class="nav-link" href="contact.html">
+						Contact
+				</a>
+			</li>
+			
+		</ul>
+    </div>
+</div>
+</nav>
+
+
+
+<!------------------------------------------------------------------------------------------------------------>
+<h2 id="unavailable">Services temporarily <u>unavailable</u> through 2025!</h2>
+<h1><strong>Please check the <a class="btn btn-primary btn-lg" href="booking.html#windrain">Wind & Rain Forecast</a> before<br>Booking Your Appointment on the Calendar Below</strong></h1>
+<!--
+<h2>(Scroll down for List of Services and Rates)</h2>
+-->
+<br>
+
+<!------------------------------------------------------------------------------------------------------------>
+
+<!--Main Services/Booking Accordian-->
+
+
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+        <center>Real Estate Video & Photography Package ($80+fuel) [Click for more details]</center>
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body"> <!--Optionally insert text-white into this div?-->
+        <ul>
+			<li>High-quality aerial photos (up to 12 images) showcasing residential or commercial properties within 100km of Saskatoon.</li>
+			<li>Short aerial video (up to 1 minute) capturing key exterior features of the property.</li>
+			<li>Basic editing included (cropping, color correction) to highlight property appeal.</li>
+			<li>Delivery of digital files within 48 hours via secure online link.</li>
+			<li>Pre-flight consultation to confirm property details and client preferences.</li>
+			<li>Fuel Surcharges: $0.70/km outside of Saskatoon Limits. Please check the upcoming forecast (see widget below) before booking a flight following consultation.</li>
+		</ul>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Rooftop / Elevated Surface Photos ($50+fuel) [Click for more details]
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is not the same as an Inspection.</strong> 
+		<br>
+		<ul>
+			<li>Up to 8 high-resolution aerial photos of rooftops or elevated surfaces within 100km of Saskatoon.</li>
+			<li>Focus on clear, well-composed images for general observation purposes (not professional inspections).</li>
+			<li>Basic editing (cropping, brightness adjustments) to ensure clear visuals.</li>
+			<li>Digital delivery within 48 hours via secure online link.</li>
+			<li>Pre-flight consultation to confirm target areas and client needs.</li>
+			<li>Fuel Surcharges: $0.70/km outside of Saskatoon Limits. Please check the upcoming forecast (see widget below) before booking a flight following consultation.</li>
+		</ul>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Development Progress Updates, Other Projects & Events (Contract-based) [Click for more details]
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <ul>
+			<li>Weekly aerial photos (up to 10 images) or short video (up to 1 minute) for residential/commercial development progress within 100km of Saskatoon.</li>
+			<li>Event coverage for sports or community gatherings, capturing up to 15 photos or 2-minute video.</li>
+			<li>Promotional aerial footage for small business or corporate marketing, tailored to client needs (up to 2-minute video).</li>
+			<li>Basic editing (cropping, color correction) with delivery within 72 hours via secure online link.</li>
+			<li>Pre-flight consultation to finalize project scope, timeline, and deliverables.</li>
+			<li>Fuel Surcharges: $0.70/km outside of Saskatoon Limits.</li>
+		</ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<!--
+<br>
+<div class="container">
+	<h3>Fuel Surcharges</h3>
+	<p class="pagetext">
+		Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. 
+	</p>
+</div>
+-->
+
+<!------------------------------------------------------------------------------------------------------------>
+
+<!--CALENDLY APPOINTMENT SCHEDULER-->
+<!-- Calendly inline widget begin -->
+<div class="calendly-inline-widget" data-url="https://calendly.com/vastlandic" style="min-width:320px;height:700px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Calendly inline widget end -->
+
+<!-- Old Ithaqua Calendly inline widget begin -->
+<!--
+<div class="calendly-inline-widget text-center" data-url="https://calendly.com/ithaquaaerial/15-minute-consultation" style="min-width:320px;height:630px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+-->
+<!-- Calendly inline widget end -->
+
+<!-- Calendly inline widget (FOR WHEN YOU NEED TO FEATURE MULTIPLE SCHEDULER OPTIONS) begin -->
+<!--
+<div class="calendly-inline-widget" data-url="https://calendly.com/ithaquaaerial?hide_landing_page_details=1&text_color=000000&primary_color=d9534f" style="min-width:320px;height:630px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+-->
+<!-- Calendly inline widget end -->
+
+<hr>
+
+<!------------------------------------------------------------------------------------------------------------>
+
+<!--Windy Forecast Widget-->
+<div id="windrain">
+<h1><strong>Saskatoon Wind & Rain Forecast</strong></h1>
+</div>
+<center><p>Please note that Drone Operations cannot be safely conducted with wind speeds exceeding 20km/h (or 25km/h gusts), rain in the forecast,<!--rain forecast of 3.0mm+,--> or temperature below 0°C.</p></center>
+<center><iframe width="600" height="550" src="https://embed.windy.com/embed2.html?lat=52.115&amp;lon=-106.664&amp;detailLat=52.153&amp;detailLon=-106.641&amp;width=600&amp;height=550&amp;zoom=11&amp;level=surface&amp;overlay=wind&amp;product=ecmwf&amp;menu=&amp;message=&amp;marker=&amp;calendar=now&amp;pressure=&amp;type=map&amp;location=coordinates&amp;detail=true&amp;metricWind=km%2Fh&amp;metricTemp=%C2%B0C&amp;radarRange=-1" frameborder="0"></iframe></center>
+<center><p>To see the current time of Sunrise & Sunset: Scroll to the right on this chart (click and drag). This may help to determine the duration of your session.</p></center>
+
+
+
+<!------------------------------------------------------------------------------------------------------------>
+
+
+<!--FOOTER-->
+
+
+<footer>
+    <div id="footertxt">
+        <div align="center">
+            <p>Nick Charpentier &copy; <script>document.write( new Date().getUTCFullYear() );</script></p> <!--WinterHowl Studios &copy;-->
+        </div>
+    </div>
+</footer>
+</body>
+</html>

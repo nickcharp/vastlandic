@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+		<title>Vastlandic Aerial</title>
+		<meta name="description" content="Aerial & Real Estate Photography in Saskatoon, Canada">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!--OLD BOOTSTRAP CSS V4.1.3 - Dropdown nav-buttons don't work-->
+		<!--
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		-->
+		
+		<!--NEW BOOTSTRAP CSS V5.1.3 - Navbar Collapse Button not functioning like in V4.1.3-->
+		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		
+		<!--NEWEST BOOTSTRAP V5.3.2 did not work well with my dropdown menu-->
+		<!--
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+		-->
+		
+		<link rel="stylesheet" type="text/css" href="css/all.css">
+		<link rel="stylesheet" type="text/css" href="css/w3.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		
+		<!--OLD BOOTSTRAP JS Version - Dropdown nav-buttons don't work-->
+		<!--
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		-->
+		
+		<!--NEW BOOTSTRAP JS Version 5.1.3 - Navbar Collapse Button not functioning like in V4.1.3-->
+		
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+		
+		<script type="text/javascript" src="js/main.js"></script>
+		
+		<!-- Google reCAPTCHA -->
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <link rel="icon" type="image/png" href="images/favicon9.png"/>
+
+</head>
+
+
+<!------------------------------------------------------------------------------------------------------------>
+
+<body>
+
+<!--HEADER "COVER PHOTO"-->
+<img src="images/cover.jpg" class="header-bkgrnd">
+
+
+<!------------------------------------------------------------------------------------------------------------>
+
+
+<!--COPIED CODE FROM SandlotPHP navbar file, and converted to HTML-->
+
+<nav class="navbar sticky-top navbar-expand-md bg-dark navbar-dark">
+<div class="container-fluid">
+    <a class="navbar-brand" style="color: #00ccff;" href="index.html">Vastlandic Aerial</a> 
+	<!--#60b0f4 for the banner logo?-->
+	
+	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="fas fa-wind fa-2x"></span>
+    </button>
+	
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">	
+        <ul class="navbar-nav ms-auto">
+		
+<!--Single Booking Tab
+			<li class="nav-item">
+				<a class="nav-link" href="booking.html">
+						Booking
+				</a>
+			</li>
+-->
+			
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					Booking
+				</a>
+				
+				
+				
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" data-bs-popper="none"> <!--Remove navbarDropdownMenuLink?-->
+						
+						<li>
+							<a class="dropdown-item" role="button" href="booking.html">
+							<h5>
+							<strong>
+								Book a Time & Date
+							</strong>
+							</h5>
+							</a>
+						</li>	
+						<div class="dropdown-divider"></div>
+						
+						<li>
+							<h3 class="dropdown-header h3">
+								Check Before You Book:
+							</h3>
+						</li>
+						
+						<li>
+							<a class="dropdown-item" role="button" href="booking.html#windrain">
+							<h5>
+							<strong>
+								Wind & Rain Forecast
+							</strong>
+							</h5>
+							</a>
+						</li>
+						
+					</ul>
+			</li>
+			
+			<!--Use THIS until Gallery has been built on your site!!!!!!!!!!!-->
+			<!--
+			<li class="nav-item">
+				<a class="nav-link" href="https://platform.brisksky.com/pilot/profile/9cdf3db8-1e0b-43f8-928d-4d3a7da824d0" target="_blank">
+						Portfolio
+				</a>
+			</li>
+			-->
+			
+			
+			<!--Needs to be further developed: Use ChatGPT with good prompts for the type of gallery you want-->
+			
+			<li class="nav-item">
+				<a class="nav-link" href="index.html#carouselDroneShots">
+						Gallery
+				</a>
+			</li>
+			
+			<!--
+			<li class="nav-item">
+				<a class="nav-link" href="gallery.html">
+						Gallery2
+				</a>
+			</li>
+			-->
+			
+			<!--Instagram-->
+			<li class="nav-item">
+				<a class="nav-link" href="http://www.instagram.com/vastlandic.aerial/" target="_blank">
+					<button class="btn btn-sm btn-primary" type="button">
+						<span class="fab fa-brands fa-instagram fa-2x" href="#"></span>
+					</button>
+				</a>
+			</li>
+			
+			<!--LinkedIn-->
+			<li class="nav-item">
+				<a class="nav-link" href="https://linkedin.com/in/nickcharp" target="_blank">
+					<button class="btn btn-sm btn-primary" type="button">
+						<span class="fab fa-brands fa-linkedin fa-2x" href="#"></span> <!--Or use fa-linkedin-in for alternate style-->
+					</button>
+				</a>
+			</li>
+			
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					About
+				</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" data-bs-popper="none">
+						
+						<li>
+							<h3 class="dropdown-header h3">
+								Certified Drone Pilots
+							</h3>
+						</li>
+						
+						<li>
+							<a class="dropdown-item" href="https://nickcharp.github.io/portfolio" target="_blank">
+								Nick Charpentier
+							</a>
+						</li>
+						
+					<!--	
+						<div class="dropdown-divider"></div>
+						<li>
+							<a class="dropdown-item" href="about.html">
+								Qualifications
+							</a>
+						</li>
+						
+						<div class="dropdown-divider"></div>
+						<li>
+							<a class="dropdown-item" href="about.html">
+								Vastlandic Vision Statement
+							</a>
+						</li>
+					-->	
+					</ul>
+			</li>
+			
+			<li class="nav-item">
+				<a class="nav-link" href="contact.html">
+						Contact
+				</a>
+			</li>
+			
+		</ul>
+    </div>
+</div>
+</nav>
+
+
+
+<!------------------------------------------------------------------------------------------------------------>
+
+
+<!--NEW CONTACT FORM WITH GOOGLE reCAPTCHA-->
+
+<!-- Contact Form Section -->
+<!--
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Nick, at Vastlandic Aerial</h2>
+            <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="col-md-6 mx-auto">
+                <!-- Full Name -->
+				<!--
+                <div class="mb-3">
+                    <label for="fullName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="fullName" name="fullName" required>
+                </div>
+                <!-- Email Address -->
+				<!--
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <!-- Subject Dropdown -->
+				<!--
+                <div class="mb-3">
+                    <label for="subject" class="form-label">Subject</label>
+                    <select class="form-select" id="subject" name="subject" required>
+                        <option value="" disabled selected>Click to Select a Subject</option>
+                        <option value="Free Consultation">Free Consultation</option>
+                        <option value="Job Opportunity">Job Opportunity</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <!-- Message -->
+				<!--
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <!-- reCAPTCHA -->
+				<!--
+                <div class="mb-3">
+                    <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
+                </div>
+                <!-- Submit Button -->
+				<!--
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
+<!--OLD CONTACT FORM-->
+<!--
+<form>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Example select</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect2">Example multiple select</label>
+            <select multiple class="form-control" id="exampleFormControlSelect2">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlFile1">Upload an Attachment</label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-2">Submit</button>
+        </div>
+</form>
+-->
+
+
+
+<!------------------------------------------------------------------------------------------------------------>
+
+<br>
+
+<!--CONSULTATION BUTTON-->
+
+<div class="bookapt text-center w3-animate-fading">
+	<a class="btn btn-primary btn-block" href="booking.html" style="z-index:999999;">
+        Click HERE to Book a Consultation!
+    </a>
+</div> 
+<br>
+
+<br>
+
+<!--LinkedIn Button-->
+
+<p align="center">All other Professional Inquiries welcome via LinkedIn</p>
+
+<div align="center">
+<a href="https://linkedin.com/in/nickcharp" target="_blank">
+	<button class="btn btn-sm btn-primary" type="button">
+		<span class="fab fa-brands fa-linkedin fa-2x" href="#"></span> <!--Or use fa-linkedin-in for alternate style-->
+	</button>
+</a>
+</div>
+
+<br>
+
+<!--Instagram Button-->
+
+<p align="center">Follow Vastlandic Aerial on Instagram</p>
+
+<div align="center">
+<a href="http://www.instagram.com/vastlandic.aerial/" target="_blank">
+	<button class="btn btn-sm btn-primary" type="button">
+		<span class="fab fa-brands fa-instagram fa-2x" href="#">
+		</span>
+	</button>
+</a>
+</div>
+
+<br>
+
+
+<!--REACT JS Code-->
+<!--
+<p align="center">Follow Us on Social Media</p>
+<!--REACT.JS Container-->
+<!--
+<div align="center" id="like_button_container"></div>
+
+<script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+<script src="js/like_button.js"></script>
+-->
+
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+
+<!--FOOTER-->
+
+
+<footer>
+    <div id="footertxt">
+        <div align="center">
+            <p>Nick Charpentier &copy; <script>document.write( new Date().getUTCFullYear() );</script></p> <!--WinterHowl Studios &copy;-->
+        </div>
+    </div>
+</footer>
+</body>
+</html>

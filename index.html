@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+		<title>Vastlandic Aerial</title>
+		<meta name="description" content="Aerial & Real Estate Photography in Saskatoon, Canada">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!--OLD BOOTSTRAP CSS V4.1.3 - Dropdown nav-buttons don't work-->
+		<!--
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		-->
+		
+		<!--NEW BOOTSTRAP CSS V5.1.3 - Navbar Collapse Button not functioning like in V4.1.3-->
+		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		
+		<!--NEWEST BOOTSTRAP V5.3.2 did not work well with my dropdown menu-->
+		<!--
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+		-->
+		
+		<link rel="stylesheet" type="text/css" href="css/all.css">
+		<link rel="stylesheet" type="text/css" href="css/w3.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		
+		<!--OLD BOOTSTRAP JS Version - Dropdown nav-buttons don't work-->
+		<!--
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		-->
+		
+		<!--NEW BOOTSTRAP JS Version 5.1.3 - Navbar Collapse Button not functioning like in V4.1.3-->
+		
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+		
+		<script type="text/javascript" src="js/main.js"></script>
+		
+		<!-- Google reCAPTCHA -->
+		<!--
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+		-->
+
+    <link rel="icon" type="image/png" href="images/favicon9.png"/>
+
+</head>
+
+
+<!------------------------------------------------------------------------------------------------------------>
+
+<body>
+
+<!--HEADER "COVER PHOTO"-->
+<img src="images/cover.jpg" class="header-bkgrnd">
+
+
+<!------------------------------------------------------------------------------------------------------------>
+
+
+<!--COPIED CODE FROM SandlotPHP navbar file, and converted to HTML-->
+
+<nav class="navbar sticky-top navbar-expand-md bg-dark navbar-dark">
+<div class="container-fluid">
+    <a class="navbar-brand" style="color: #00ccff;" href="index.html">Vastlandic Aerial</a> 
+	<!--#60b0f4 for the banner logo?-->
+	
+	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="fas fa-wind fa-2x"></span>
+    </button>
+	
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">	
+        <ul class="navbar-nav ms-auto">
+		
+<!--Single Booking Tab
+			<li class="nav-item">
+				<a class="nav-link" href="booking.html">
+						Booking
+				</a>
+			</li>
+-->
+			
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					Booking
+				</a>
+				
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" data-bs-popper="none"> <!--Remove navbarDropdownMenuLink?-->
+						
+						<li>
+							<a class="dropdown-item" role="button" href="booking.html">
+							<h5>
+							<strong>
+								Book a Time & Date
+							</strong>
+							</h5>
+							</a>
+						</li>	
+						<div class="dropdown-divider"></div>
+						
+						<li>
+							<h3 class="dropdown-header h3">
+								Check Before You Book:
+							</h3>
+						</li>
+						
+						<li>
+							<a class="dropdown-item" role="button" href="booking.html#windrain">
+							<h5>
+							<strong>
+								Wind & Rain Forecast
+							</strong>
+							</h5>
+							</a>
+						</li>
+						
+					</ul>
+			</li>
+			
+			<!--Use THIS until Gallery has been built on your site!!!!!!!!!!!-->
+			<!--
+			<li class="nav-item">
+				<a class="nav-link" href="https://platform.brisksky.com/pilot/profile/9cdf3db8-1e0b-43f8-928d-4d3a7da824d0" target="_blank">
+						Portfolio
+				</a>
+			</li>
+			-->
+			
+		
+			
+			<li class="nav-item">
+				<a class="nav-link" href="index.html#carouselDroneShots">
+						Gallery
+				</a>
+			</li>
+			
+			<!--
+			<li class="nav-item">
+				<a class="nav-link" href="gallery.html">
+						Gallery2
+				</a>
+			</li>
+			-->
+			
+			<!--
+			<li class="nav-item">
+				<a class="nav-link" href="contact">
+						Home Prep Guide
+				</a>
+			</li>
+			-->
+			
+			<!--Instagram-->
+			<li class="nav-item">
+				<a class="nav-link" href="http://www.instagram.com/vastlandic.aerial/" target="_blank">
+					<button class="btn btn-sm btn-primary" type="button">
+						<span class="fab fa-brands fa-instagram fa-2x" href="#"></span>
+					</button>
+				</a>
+			</li>
+			
+			<!--LinkedIn-->
+			<li class="nav-item">
+				<a class="nav-link" href="https://linkedin.com/in/nickcharp" target="_blank">
+					<button class="btn btn-sm btn-primary" type="button">
+						<span class="fab fa-brands fa-linkedin fa-2x" href="#"></span> <!--Or use fa-linkedin-in for alternate style-->
+					</button>
+				</a>
+			</li>
+			
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					About
+				</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" data-bs-popper="none">
+						
+						<li>
+							<h3 class="dropdown-header h3">
+								Certified Drone Pilots
+							</h3>
+						</li>
+						
+						<li>
+							<a class="dropdown-item" href="https://nickcharp.github.io/portfolio" target="_blank">
+								Nick Charpentier
+							</a>
+						</li>
+						
+					</ul>
+			</li>
+			
+			<li class="nav-item">
+				<a class="nav-link" href="contact.html">
+						Contact
+				</a>
+			</li>
+			
+		</ul>
+    </div>
+</div>
+</nav>
+
+
+
+<!------------------------------------------------------------------------------------------------------------>
+
+<!--CONSULTATION BUTTON-->
+<!--
+<br>
+<div class="bookapt text-center w3-animate-fading">
+	<a class="btn btn-primary btn-block" href="booking.html" style="z-index:999999;">
+        Click HERE to Book a Free Consultation!
+    </a>
+</div> 
+-->
+
+<!--INTRODUCTION PARAGRAPH-->
+<!--
+<h1><strong>Vastlandic</strong></h1>
+<h2><strong>Aerial & Real Estate<br>Photography Services
+<!--
+<br>&<br>Geospatial Analysis
+</strong></h2>
+-->
+<div class="container">
+        <h2 id="unavailable">Services temporarily <u>unavailable</u> through 2025!</h2>
+		<h1>Welcome to Vastlandic Aerial</h1>
+        <p class="pagetext">Need to get a quick look at your roof or other elevated surface out of reach? Or a set of aerial photos of your property or outdoor event? ... but don't know who to call?</p> 
+		<p class="pagetext">I'm Nick Charpentier, a Transport Canada certified Drone Operator and full-time GIS Technician based in Saskatoon, SK, Canada, <strong>looking to assist you in your small-scale jobs</strong> from a bird's-eye-view<!--up-above-->, <!--to gain valuable experience for my aerial services portfolio while--> delivering you the clear and detailed view that only an eye-in-the-sky can provide!</p> 
+		<p class="pagetext">Please reach out to me via the <a href="contact.html">Contact</a> or <a href="booking.html">Booking</a> pages to get in touch. I look forward to discussing how I can safely and effectively assist you!</p>
+<!--"...I'm a certified drone operator specializing in photogrammetry (3D modeling) and aerial photography, dedicated to providing high-quality images that capture the beauty and uniqueness of each property, all while maintaining a top-notch standard of safety and care."-->
+
+		<!--CONSULTATION BUTTON-->
+<!--
+<div class="bookapt text-center w3-animate-fading">
+	<a class="btn btn-primary btn-block" href="booking.html" style="z-index:999999;">
+        Click here to Book a Free Consultation!
+    </a>
+</div> 
+<br>
+-->
+<hr>
+        
+        <h2>Current Services include:</h2>
+        <ul>
+            <li>Aerial Video & Photography:
+                <ul>
+                    <li>Exterior Captures (Residential & Commercial Properties within 100km of Saskatoon)
+					</li>
+					<!--
+					<li>Interior Photography (case-by-case basis)
+					</li>
+					<li>
+					Residential Properties (within 100km of Saskatoon)
+					</li>
+					<li>
+					Commercial Properties
+					</li>
+					-->
+					<li>
+					Rooftop / Elevated Surface Imaging (FYI only, <u>not</u> as a Professional Inspection)
+					</li>
+					<li>
+					Weekly Photo & Video Progress Updates of Residential / Commercial Development
+					</li>
+					<!--
+					<li>Photogrammetry (3D Volumetric Modeling)</li>
+                    <li>Special Events (When determined Safe)</li>
+					-->
+                </ul>
+            </li>
+			<!--
+            <li>Real Estate Photography
+                <ul>
+                    <li>Exterior Photography (Primarily)</li>
+					<li>Interior Photography (Case-by-case basis)</li>
+					<!--
+                    <li>Virtual Tours</li>
+                </ul>
+			-->
+            </li>
+			
+            <li>Custom Aerial Projects:
+			<!--(when determined as Safe to Operate)-->
+                <ul>
+                    <li>Special Events (Sports & Community Events)</li>
+					<li>Promotional Film (Small Business & Corporate Marketing Campaigns)</li>
+					<li>Film Industry (Documentaries & Movies)
+					<!--
+                    <li>Personal Projects (Drone for Hire)</li>
+					-->
+                </ul>
+            </li>
+        </ul>
+		
+		<br>
+		
+		<!--CONSULTATION BUTTON-->
+
+<div class="bookapt text-center w3-animate-fading">
+	<a class="btn btn-primary btn-block" href="booking.html" style="z-index:999999;">
+        Click here to Book a Free Consultation!
+    </a>
+</div> 
+
+<br>
+<div align="center"><h4>For more on Service Fees, please view the <a href="booking.html">Booking</a> page.<br>Thank you for your consideration!
+</h4></div>
+
+		
+    </div>
+
+<div class="textcontain">
+    <p class="textcontain">
+        <!--Vastlandic Aerial Services & Geospatial Analysis is--> 
+		<!--
+		Based in Saskatoon, Saskatchewan, Nick Charpentier <!--(owner of Vastlandic Aerial)--> 
+		<!--
+		is a Transport Canada certified UAV/RPAS Operator, offering a variety of drone and GIS-related services:
+		
+		<li>
+		Real Estate Video & Photography (incl. Acreages)
+		</li>
+		
+		<li>
+		Cinematography (Promotional Film, News Reports, Documentaries, Sporting Events)
+		</li>
+		
+		<li>
+		Photogrammetry
+		(3D Volumetric Modeling - Weekly Residential/Commercial Development Progress Updates)
+		</li>
+		
+		<li>
+		Quick Rooftop and Elevated Infrastructure Imaging (but not qualified for providing thorough Inspections or Analysis)
+		</li>
+		
+		<li>
+		Air Support for Search & Rescue Missions
+		</li>
+	
+    </p>
+    <p class="textcontain">
+        Please visit our <a href="service.html">Services</a> or <a href="contact.html">Contact</a> pages for more information. Thank you!
+		<br>
+		Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn. Nnnnw n'gha, cuaaah k'yarnak h'Nyarlathotep shugg ron ch' vulgtm kn'a, Chaugnar Faugn mg syha'h Tsathogguaagl Nyarlathotep nghupadgh cgrah'n, nw kadishtu h'gof'nn grah'n geb vulgtlagln. Ilyaa hai phlegeth f'nog hupadgh y-nglui r'luh kn'a, nglui nnnShub-Niggurath nnnli'hee wgah'n uaaah 'fhalma lw'nafh, nakadishtu cebunma tharanak shogg R'lyeh ch'.
+		-->
+		<!--
+		Syha'h geb vulgtlagln naflooboshu Nyarlathotep zhro stell'bsnaagl Tsathoggua r'luh, h'ilyaa hafh'drn nilgh'ri k'yarnak n'ghft cTsathoggua nog ngs'uhn, shugg uln hafh'drn nnnebunma nilgh'ri gnaiih nilgh'ri. Shugg ph'Hastur czhro gotha nw lw'nafh ah vulgtm fm'latghyar grah'n ebunmayar s'uhn athg cya ftaghu sll'ha naflfm'latgh, shogg h'gof'nn grah'n 'bthnk vulgtm culn Cthulhu uaaah r'luh nakadishtu R'lyeh nw n'gha ehye nglloig. Zhrooth nnnzhro ngnglui Dagon cshogg shtunggli ee lw'nafhor gnaiihyar f'wgah'n Cthulhuagl ep uln, 'fhalma ya llll 'bthnk ngHastur shogg h'uln syha'h y-hai nnnChaugnar Faugn.
+
+        Gof'nn uln Hastur nas'uhn 'bthnk mg nafm'latgh s'uhn ch', y-'fhalma hafh'drn ya ftaghu vulgtm hupadgh lloig athg, gnaiihoth ya ngR'lyeh ehye cch' ehye mg. Nilgh'riyar Nyarlathotep kadishtuor ron wgah'n ch'nyth ftaghu sgn'wahlog goka naflstell'bsna lloignyth, ron fm'latgh hafh'drn r'luh 'bthnk fhtagn h'Azathoth hlirgh naron naphlegeth, hupadgh shagg nnnAzathoth gnaiih h'ron naathg lw'nafh R'lyeh mnahn'. Yoggoth chtenff y'hah tharanak h'shtunggli Yoggoth f'Dagon nog gotha, kn'a shagg ngwgah'n nw mnahn' f'orr'e kn'anyth hrii, Nyarlathotep h'hrii shaggyar ebunma sll'ha throd gof'nn. N'ghft s'uhn kn'a gnaiih y'hah ftaghu y-shtunggli h'hupadgh, ebunma gof'nn cR'lyeh kadishtu Azathoth fm'latgh gof'nn mg, Hastur chtenff R'lyeh bug ehye ph'hlirgh. Nguln uln ftaghu geb h'gof'nn uh'e phlegeth fm'latgh ah ee kadishtu na'ai, uln y'hah ph'sll'ha orr'e syha'hoth mg gnaiih 'fhalma ch' nnnee.
+        -->
+    </p>
+</div>
+
+<!--BOOTSTRAP V5.1 CAROUSEL FIX-->
+
+<hr>
+  <div class="droneshot-container">
+    <div id="carouselDroneShots" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/d1.jpg" class="d-block w-100" alt="Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="images/d2.jpg" class="d-block w-100" alt="Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="images/d3.jpg" class="d-block w-100" alt="Image 3">
+            </div>
+            <div class="carousel-item">
+                <img src="images/d4.jpg" class="d-block w-100" alt="Image 4">
+            </div>
+            <div class="carousel-item">
+                <img src="images/d5.jpg" class="d-block w-100" alt="Image 5">
+            </div>
+            <div class="carousel-item">
+                <img src="images/d6.jpg" class="d-block w-100" alt="Image 6">
+            </div>
+            <div class="carousel-item">
+                <img src="images/d7.jpg" class="d-block w-100" alt="Image 7">
+            </div>
+            <div class="carousel-item">
+                <img src="images/d8.jpg" class="d-block w-100" alt="Image 8">
+            </div>
+            <div class="carousel-item">
+                <img src="images/d9.jpg" class="d-block w-100" alt="Image 9">
+            </div>
+            <div class="carousel-item">
+                <img src="images/d10.jpg" class="d-block w-100" alt="Image 10">
+            </div>
+            <div class="carousel-item">
+                <img src="images/d11.jpg" class="d-block w-100" alt="Image 11">
+            </div>
+            <div class="carousel-item">
+                <img src="images/d12.jpg" class="d-block w-100" alt="Image 12">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselDroneShots" data-bs-slide="prev">
+            <span class="fas fa-arrow-alt-circle-left fa-2x" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselDroneShots" data-bs-slide="next">
+            <span class="fas fa-arrow-alt-circle-right fa-2x" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+<!--
+<hr>
+-->		
+<!------------------------------------------------------------------------------------------------------------>
+
+<!--GOOGLE MAPS 1350 x 400-->
+<!--
+<div class="saskmap map-responsive">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127506.067674459!2d-106.80449282353266!3d52.15039103142355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5304f6bf47ed992b%3A0x5049e3295772690!2sSaskatoon%2C%20SK!5e1!3m2!1sen!2sca!4v1619898148296!5m2!1sen!2sca" width="1400" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+-->
+
+<!------------------------------------------------------------------------------------------------------------>
+
+<!--FOOTER-->
+
+<footer>
+    <div id="footertxt">
+        <div align="center">
+            <p>Nick Charpentier &copy; <script>document.write( new Date().getUTCFullYear() );</script></p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,272 @@
+/* GLOBAL STYLE */
+body {
+	background-color: #edede1; 
+	/*#edede1 is slightly off-white to accentuate the home page text frame*/
+	/*#B9BFBF color-dropped from the austrian clouds in the banner*/
+	/*background-color: #0a570c; (Dark Green background)*/
+	/*background-color: #00ccff; (cyan)*/
+	color: #000000;
+	/*color: #b8baba;*/
+	/*padding-top: 90px;*/
+	padding-bottom: 30px;
+	/*OR margin-bottom: 30px;*/
+}
+
+/*
+canvas { 
+	width: 100%; height: 100% 
+}
+*/
+
+
+h1 {
+	color: black;
+	text-align: center;
+	padding-top: 25px;
+}
+
+h2 {
+	color: black;
+	text-align: center;
+}
+
+h3 {
+	color: black;
+	text-align: center;
+}
+
+#unavailable {
+	color: red;
+}
+
+a.active {
+	color: #00ccff;
+}
+
+.header-bkgrnd {
+	/*background-image: url("../images/cover.jpg");*/
+	width: 100%;
+	height: auto;
+	/*background-size: cover;*/
+}
+
+/*NAVIGATION STYLING*/
+.navbar-brand {
+	/*margin-left: 5%;*/
+	font-size: 26px;
+	font-weight: 700;
+}
+
+.navbar-nav {
+	/*margin-right: 3%;*/
+}
+
+.navbar-nav > li{
+	padding-left:2px;
+	padding-right:2px;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+/*Unable to Overwrite bootstrap color*/
+.toggle-button-color {
+	color: #00ccff;
+}
+
+.bookapt {
+	/*width: 80%;*/
+}
+
+.textcontain {
+	/*padding-top: 30px;*/
+	margin: 25px;
+	text-indent: 3%;
+}
+
+/*********************************************************************************/
+/*AI generated text layout*/
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/*
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+*/
+
+.pagetext {
+    text-indent: 1.5em;
+    line-height: 1.6;
+    color: #555;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #555;
+}
+
+ul ul {
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+}
+
+/* Carousel Controls */
+.droneshot-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px; /* Increased for wider carousel */
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.droneshot-container img {
+    width: 100%;
+    height: auto;
+    max-height: 80vh; /* Increased height for larger images */
+    object-fit: contain;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    z-index: 1; /* Ensure controls are above images */
+    opacity: 0.6; /* Semi-transparent controls */
+    transition: opacity 0.2s ease; /* Smooth hover effect */
+    width: 10%; /* Slightly wider to position buttons inward */
+}
+
+.carousel-control-prev {
+    transform: translateX(8px); /* Adjusted outward for larger images */
+}
+
+.carousel-control-next {
+    transform: translateX(-8px); /* Adjusted outward for larger images */
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 0.8; /* Slightly more opaque on hover */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none; /* Remove default Bootstrap arrows */
+}
+
+.carousel-control-prev span,
+.carousel-control-next span {
+    color: #ffffff; /* White icons */
+    font-size: 2rem; /* Match fa-2x size */
+}
+
+@media (max-width: 768px) {
+    .droneshot-container {
+        max-width: 100%; /* Full width for mobile */
+        padding: 0 15px;
+    }
+    .droneshot-container img {
+        max-height: 70vh; /* Increased height for mobile */
+    }
+}
+
+
+
+/*********************************************************************************/
+
+
+#accordion {
+	margin-bottom: 30px;
+}
+
+.accordion-body ul {
+    color: #000000; /* Black text for accordion list items */
+}
+
+.card {
+	max-width: 60%;
+	text-align: center;
+}
+
+.thirdcard {
+	margin-bottom: 100px;
+}
+
+.modalbtn {
+	padding-bottom: 15px;
+}
+
+.btn-block {
+	border-radius: 0 !important;
+}
+
+
+/*AI provided accordion color fix*/
+
+.accordion-item {
+    background-color: #696969;
+}
+
+.accordion-button {
+    color: #fff;
+    background-color: #696969; /* #0275d8 is Bootstrap "Primary" Hex code */
+    text-align: center;
+    justify-content: center;
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #696969;
+    color: #fff; /* Set text color to white when expanded */
+}
+
+/*Contact Form (Not yet active)
+form {
+	margin: 40px;
+}
+*/
+
+
+footer {
+    background-color: #008fb3;
+    color: #ffffff;
+    margin-top: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 30px;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footertxt {
+    font-size: 16px;
+    line-height: 1;
+    margin: 0;
+}
+
+#footertxt p {
+    margin: 0;
+}
